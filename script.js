@@ -42,7 +42,10 @@ function turn(squareId, player) {
 	let gameWon = checkWin(origBoard, player)
 	if (gameWon) gameOver(gameWon)
 }
-
+// @ This is the function you need to check the score!
+ // summing up the moves to see which player is the winner
+ //  if the current value is equal to e than
+ //  concat the sum to the index or a gets an empty array!
 function checkWin(board, player) {
 	let plays = board.reduce((a, e, i) =>
 		(e === player) ? a.concat(i) : a, []);
@@ -55,7 +58,7 @@ function checkWin(board, player) {
 	}
 	return gameWon;
 }
-
+// The gameover function which turns blue or red based on X or O
 function gameOver(gameWon) {
 	for (let index of winCombos[gameWon.index]) {
 		document.getElementById(index).style.backgroundColor =
@@ -66,7 +69,7 @@ function gameOver(gameWon) {
 	}
 	declareWinner(gameWon.player == huPlayer ? "You win!" : "You lose.");
 }
-
+// declaring winners based the WinCombo array
 function declareWinner(who) {
 	document.querySelector(".endgame").style.display = "block";
 	document.querySelector(".endgame .text").innerText = who;
@@ -92,11 +95,12 @@ function checkTie() {
 	return false;
 }
 
-// // I finally did this!!! this mini max function now it works
+
 // //  so it is cheking for the available availSpots
 // // if the check winer function works it gives the score of -10 to the human aiPlayer
 // //  the score of 0 for tie game.
-//
+// used the checkwiner function and check the score of each aiPlayer
+
 function minimax(newBoard, player) {
 	var availSpots = emptySquares();
 
@@ -107,6 +111,8 @@ function minimax(newBoard, player) {
 	} else if (availSpots.length === 0) {
 		return {score: 0};
 	}
+	//  make an object and asign the score of each move to the empty object
+	
 	var moves = [];
 	for (var i = 0; i < availSpots.length; i++) {
 		var move = {};
