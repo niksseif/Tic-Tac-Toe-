@@ -1,7 +1,8 @@
 # Tic-Tac-Toe-
 
-Here is the link to the game,    http://safe-shoe.surge.sh/
-Rules:
+## Here is the link to the game,    http://safe-shoe.surge.sh/
+
+### Rules:
 
 To begin, let's start by defining what it means to play a perfect game of tic tac toe:
  The logic of the game:
