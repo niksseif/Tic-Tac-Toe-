@@ -26,3 +26,4 @@ Top image shows the state of the game which we can determine the wining of the t
 In the image I see when is my turn, then I have some choices to make, there are three places I can play, one of which clearly results in me wining and earning the 10 points. If I don't make that move, X could very easily win. And I don't want X to win, so my goal here, as the first player, should be to pick the maximum scoring move.
 X is also playing to win, but relative to O, X wants to chose the move that results in the worst score for O. It wants to pick a move to minimize our ultimate score.
 
+![screen shot 2018-05-18 at 4 36 07 am](https://user-images.githubusercontent.com/24830759/40232802-28dfd6d2-5a55-11e8-9438-3c76f4274584.png)
