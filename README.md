@@ -22,7 +22,7 @@ If player wins the grid turn to blue color.
 
 
 Top image shows the state of the game which we can determine the wining of the two players. 
-### E = (X's winning possibility - O's winning possibility);
+### E = (O's winning possibility - X's winning possibility);
 In the image I see when is my turn, then I have some choices to make, there are three places I can play, one of which clearly results in me wining and earning the 10 points. If I don't make that move, X could very easily win. And I don't want X to win, so my goal here, as the first player, should be to pick the maximum scoring move.
 X is also playing to win, but relative to O, X wants to chose the move that results in the worst score for O. It wants to pick a move to minimize our ultimate score.
 
