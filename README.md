@@ -1,5 +1,5 @@
 # Tic-Tac-Toe
-### Here is the link to the game,    amusing-fairies.surge.sh
+### Here is the link to the game,    http://amusing-fairies.surge.sh/
 ### Rules:
 
 To begin, let's start by defining what it means to play a perfect game of tic tac toe:
